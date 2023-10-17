@@ -8,7 +8,7 @@
     <header style="width: 100%;position: fixed; background-color: rgb(200,245,123,0.7); z-index: 100;">
          <nav>
              <ul style="list-style: none; overflow: hidden;">
-                 <li style="float: left;font-family: Arial, Helvetica, sans-serif;font-size: 20px;display: block; padding: 20px ;"><a href="home.html" style="color: #000000; text-decoration: none;">Inicio</a></li>
+                 <li style="float: left;font-family: Arial, Helvetica, sans-serif;font-size: 20px;display: block; padding: 20px; background-color: rgb(109, 117, 43) ;border-radius: 20%;"><a href="home.html" style="color: #ffffff; text-decoration: none;">Inicio</a></li>
                  <li style="float: left;font-family: Arial, Helvetica, sans-serif;font-size: 20px;display: block; padding: 20px ;"><a href="acerca_de.html" style="color: #000000; text-decoration: none;">Acerca de</a></li>
                  <li style="float: left;font-family: Arial, Helvetica, sans-serif;font-size: 20px;display: block; padding: 20px ;"><a href="quienes_somos.html" style="color: #000000; text-decoration: none;">¿Quiénes somos?</a></li>
                  <li style="float: right;font-family: Arial, Helvetica, sans-serif;display: block; padding-right: 50px ; padding-top: 10px;">
@@ -53,11 +53,13 @@
             <div style="object-fit: cover; width: 100%; display: block;">
             <img src="img/imagenPrincipalSM.jpg">
             </div>
-            <div style="object-fit: cover; display: flex; overflow-y: auto; width: 200px; height: 200px; margin-right: 10px; ">
-                <img src="img/senderismo.jpg">
-                <img src="img/paseoACaballo.jpg">
-                <img src="img/pesca.jpg">
-                <img src="img/ciclismo.jpg">
+            <div style="object-fit: cover; display: flex; overflow-y:hidden; scroll-snap-type: x mandatory; scroll-behavior: smooth; ">
+                <div style="scroll-snap-align: start; object-fit: cover;">
+                    <img src="img/senderismo.jpg" style="width: 500px; height: 500px; ">
+                    <img src="img/paseoACaballo.jpg" style="width: 500px; height: 500px; ">
+                    <img src="img/pesca.jpg" style="width: 500px; height: 500px; ">
+                    <img src="img/ciclismo.jpg" style="width: 500px; height: 500px; ">
+                </div>
             </div>
         </div>
     </body>
